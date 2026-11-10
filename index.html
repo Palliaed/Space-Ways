@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space Ways: jogo de tabuleiro de caminhos e peças. Fique no tabuleiro enquanto o espaço se desenrola.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Space Ways</title>
+</head>
+<body>
+    <header>
+        <!-- Nav desktop -->
+        <nav class="nav-desktop" aria-label="Navegação principal">
+            <a href="#inicio" class="logo" aria-label="Space Ways, início"><img src="assets/img/logo.png" alt="Space Ways"></a>
+            <ul>
+                <li><a href="#info">O jogo</a></li>
+                <li><a href="#gamebox">Na caixa</a></li>
+                <li><a href="#cartas">Cartas</a></li>
+                <li><a href="#pdf">Regras</a></li>
+                <li><a href="#creditos">Créditos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Nav mobile (hambúrguer) -->
+        <nav class="nav-mobile" aria-label="Navegação mobile">
+            <a href="#inicio" class="logo" aria-label="Space Ways, início"><img src="assets/img/logo.png" alt="Space Ways"></a>
+            <button class="burger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="menu-mobile">
+                <li><a href="#info">O jogo</a></li>
+                <li><a href="#gamebox">Na caixa</a></li>
+                <li><a href="#cartas">Cartas</a></li>
+                <li><a href="#pdf">Regras</a></li>
+                <li><a href="#creditos">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+    <section class="Banner">
+        <!-- Troque por <img src="assets/img/banner.png"> (1920x720) -->
+        <div class="banner-art" role="img" aria-label="Arte de capa do Space Ways">
+            <div class="floaters" aria-hidden="true">
+            <div class="floater chip" style="--depth:26"><img src="assets/img/personagens/chip.png" alt="" style="--dur:9s;--delay:-2s;--rot:5deg;--amp:16px"></div>
+            <div class="floater liz" style="--depth:18"><img src="assets/img/personagens/liz.png" alt="" style="--dur:8s;--delay:-4s;--rot:6deg;--amp:14px"></div>
+            <div class="floater cosmo" style="--depth:38"><img src="assets/img/personagens/cosmo.png" alt="" style="--dur:12s;--delay:-7s;--rot:5deg;--amp:22px"></div>
+            <div class="floater aether" style="--depth:34"><img src="assets/img/personagens/aether.png" alt="" style="--dur:11s;--delay:-6s;--rot:7deg;--amp:20px"></div>
+            <div class="floater felix" style="--depth:30"><img src="assets/img/personagens/felix.png" alt="" style="--dur:10s;--delay:-1s;--rot:8deg;--amp:18px"></div>
+            <div class="floater luna" style="--depth:22"><img src="assets/img/personagens/luna.png" alt="" style="--dur:9.5s;--delay:-3s;--rot:6deg;--amp:16px"></div>
+        </div>
+            <h1 class="hero-logo"><img src="assets/img/logo.png" alt="Space Ways"></h1>
+            <p>Construa seu caminho no espaço.</p>
+            <a class="btn" href="#info">Conheça o nosso jogo</a>
+        </div>
+    </section>
+
+    <section class="Info" id="info">
+        <div class="info-card reveal">
+            <div class="info-text">
+                <h2>Cada peça é um caminho</h2>
+                <p>Em Space Ways você joga uma carta de trilha a cada turno e sua nave segue por ela. O objetivo é simples: ser a última nave no tabuleiro.</p>
+                <p>A cada rodada um jogador compra uma carta de trilha e a posiciona no tabuleiro, a nave segue pelo caminho criado, tentando permanecer no jogo. Caso o acaminho leve para fora do tabuleiro, o jogador perde.</p>
+                <p>Inspirado em Tsuro, com personagens, planetas e muito vácuo para cair.</p>
+            </div>
+            <img class="info-img" src="assets/img/capa.jpg" alt="Arte de capa do Space Ways com os personagens flutuando ao redor de uma trilha laranja" loading="lazy">
+        </div>
+    </section>
+
+    <section class="GameBox" id="gamebox">
+        <h2 class="reveal">O que vem na caixa</h2>
+        <div class="gb-grid">
+            <article class="reveal"><img class="gb-img" src="assets/img/tabuleiro.jpg" alt="Tabuleiro 5x5 com arte de nebulosas e planetas" loading="lazy"><h3>Tabuleiro</h3><p>Grade espacial onde as trilhas se conectam.</p></article>
+            <article class="reveal"><img class="gb-img" src="assets/img/nave.png" alt="Peões em formato de Nave" loading="lazy"><h3>Peças de nave</h3><p>Uma para cada piloto, até 6 jogadores.</p></article>
+            <article class="reveal"><img class="gb-img" src="assets/img/pecas.png" alt="Peças de trilha com caminhos dourados" loading="lazy"><h3>Cartas de trilha</h3><p>Cada carta cria novos caminhos pelo espaço.</p></article>
+        </div>
+    </section>
+
+    <section class="Cartas" id="cartas">
+        <h2>Conheça os Personagens!</h2>
+        <p class="sub">Passe o mouse (ou toque) para virar.</p>
+        <div class="carousel" aria-label="Carrossel de cartas">
+            <ul class="track">
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta1.jpg" alt="Carta do personagem Chip" loading="lazy" draggable="false"></div></div></div></li>
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta2.jpg" alt="Carta do personagem Liz" loading="lazy" draggable="false"></div></div></div></li>
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta3.jpg" alt="Carta do personagem Luna" loading="lazy" draggable="false"></div></div></div></li>
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta4.jpg" alt="Carta do personagem Cosmo" loading="lazy" draggable="false"></div></div></div></li>
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta5.jpg" alt="Carta do personagem Félix" loading="lazy" draggable="false"></div></div></div></li>
+                <li class="slot"><div class="card"><div class="card-inner"><div class="face back"></div><div class="face front"><img src="assets/img/carta6.jpg" alt="Carta do personagem Aether" loading="lazy" draggable="false"></div></div></div></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="PDF" id="pdf">
+        <div class="pdf-box reveal">
+            <h2>Regras do jogo</h2>
+            <p>Toque ou clique no botão para baixar o PDF no seu dispositivo.</p>
+            <a class="btn" href="assets/pdf/regras-space-ways.pdf" download>Baixar regras (PDF)</a>
+        </div>
+    </section>
+
+    <section class="Creditos" id="creditos">
+        <h2 class="reveal">Nossa equipe</h2>
+        <ul class="credits">
+            <li class="reveal"><img class="avatar" src="assets/img/credito-ju.jpg" alt="Foto de Ju" loading="lazy"><strong>Julya Pinheiro</strong><span>Produtora Gráfica</span></li>
+            <li class="reveal"><img class="avatar" src="assets/img/credito-leo.jpg" alt="Foto de Leo" loading="lazy"><strong>Leonardo Eiji</strong><span>Designer</span></li>
+            <li class="reveal"><img class="avatar" src="assets/img/credito-ana.jpg" alt="Foto de Ana" loading="lazy"><strong>Ana Carolyne</strong><span>Ilustração</span></li>
+            <li class="reveal"><img class="avatar" src="assets/img/credito-dee.jpg" alt="Foto de Dee" loading="lazy"><strong>Diego Rodrigo</strong><span>Desenvolvimento Web</span></li>
+        </ul>
+    </section>
+    </main>
+
+    <footer>
+        <img class="foot-logo" src="assets/img/logo.png" alt="Space Ways">
+        <div class="foot-links">
+            <a href="#info">O jogo</a>
+            <a href="#cartas">Cartas</a>
+            <a href="#pdf">Regras</a>
+            <a href="#creditos">Créditos</a>
+            <a href="mailto:contato@spaceways.com">Contato</a>
+        </div>
+        <p>&copy; 2026 Space Ways. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
